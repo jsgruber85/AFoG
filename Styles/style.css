@@ -1,3 +1,9 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Game preview cards start */
 .card-preview-image {
     border-radius: 20px;
     box-shadow: 0px 0px 8px black;
@@ -21,3 +27,72 @@
     margin: 0px;
     padding: 0px;
 }
+/* Game preview cards end */
+
+/* Title animation start */
+.grow-in {
+    transform: scale(0);
+    animation: scale 1.4s forwards;
+}
+
+.delay1 {
+animation-delay: 0.3s;
+}
+
+.delay2 {
+    animation-delay: 0.8s;
+}
+
+.delay3 {
+    animation-delay: 20.5s;
+}
+
+@keyframes scale {
+    35% {
+    transform: scale(1.2);
+    }
+    100% {
+    transform: scale(1)
+    }
+}
+
+.slide-right {
+    position: relative;
+    left: -2000px;
+    animation: slide-right 0.8s forwards;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-right {
+    100% {
+        left: 0px;
+    }
+}
+
+.slide-left {
+    position: relative;
+    right: -2000px;
+    animation: slide-left 0.8s forwards;
+    animation-delay: 0.2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slide-left {
+    100% {
+        right: 0px;
+    }
+}
+
+.slide-up {
+    position: relative;
+    bottom: -2000px;
+    animation: slide-up 1s forwards;
+}
+
+@keyframes slide-up {
+    100% {
+        bottom: 0px;
+    }
+}
+/* Title animation end */
