@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Fifth of Gaming</title>
+
+        <!-- CSS Start -->
+        <link rel="stylesheet" href="./Styles/Bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="./Styles/style.css">
+        <!-- CSS End -->
+
+    </head>
+    <body>
+
+        <!-- Navbar Star -->
+        <section navbar class="pb-5 mb-5">
+            <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
+                <div class="container-fluid" style="padding-left: 0px;">
+                    <a href="./index.html"><img class="navbar-brand afog-navbar-image" src="./Assets/Images/AFoG Logos/AFoG Text - Red.png" alt="afog"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Guilds<span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">My Sessions</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vault</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">My Vault</a>
+                                <a class="dropdown-item" href="#">Guild Vault</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Add Funds</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Admin</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faq.html">FAQ</a>
+                        </li>
+                        </ul>
+                        <div style="padding-right: 20px;">
+                            <p style="margin: auto">My Vault Balance: 3,670,456 sats ($4.72)</p>
+                        </div>
+                        <a href="./login.html">
+                            <button class="btn btn-info my-2 my-sm-0" type="submit">My Account</button>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Navbar End -->
+
+        <!-- FAQ Start -->
+        <section faq>
+            <div class="container">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <div class="accordion" id="aboutUsAccordion">
+                    <h3 class="pt-4">About us</h3>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="aboutUsOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutUsOne" aria-expanded="true" aria-controls="collapseAboutUsOne">
+                                What is ‘A Fifth of Gaming’?
+                            </button>
+                        </h4>
+                        <div id="collapseAboutUsOne" class="accordion-collapse collapse" aria-labelledby="aboutUsOne" data-bs-parent="#aboutUsAccordion">
+                            <div class="accordion-body">
+                                ‘A Fifth of Gaming’ (AFoG) is a tool for organizing a recurring online multiplayer video game night. It handles game selection, session scheduling, player info, attendance tracking, and email reminders.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="aboutUsTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutUsTwo" aria-expanded="false" aria-controls="collapseAboutUsTwo">
+                                Why was AFoG created?
+                            </button>
+                        </h4>
+                        <div id="collapseAboutUsTwo" class="accordion-collapse collapse" aria-labelledby="aboutUsTwo" data-bs-parent="#aboutUsAccordion">
+                            <div class="accordion-body">
+                                It’s easier for people with busy lives to set aside time to get together and play a game if there is a set schedule known in advance. I created AFoG because I kept having conversations with friends and colleagues that ended with “Yah, we should totally play that together sometime!” but never translated into actual playtime.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="aboutUsThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAboutUsThree" aria-expanded="false" aria-controls="collapseAboutUsThree">
+                                Why is it called 'A Fifth of Gaming'?
+                            </button>
+                        </h4>
+                        <div id="collapseAboutUsThree" class="accordion-collapse collapse" aria-labelledby="aboutUsThree" data-bs-parent="#aboutUsAccordion">
+                            <div class="accordion-body">
+                                <!-- TODO: Get verbiage from David -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="howAccordion">
+                    <h3 class="pt-4">How does A Fifth of Gaming work?</h3>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowOne" aria-expanded="true" aria-controls="collapseHowOne">
+                                What is a Guild?
+                            </button>
+                        </h4>
+                        <div id="collapseHowOne" class="accordion-collapse collapse" aria-labelledby="howOne" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                A guild is a group of players that are fully independent from all other users of AFoG. They have their own schedule, their own game selection, their own admins, their own history, etc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowTwo" aria-expanded="true" aria-controls="collapseHowTwo">
+                                Can I make my own guild?
+                            </button>
+                        </h4>
+                        <div id="collapseHowTwo" class="accordion-collapse collapse" aria-labelledby="howTwo" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                Anyone can create a guild! Head over to our <a href="./create-guild.html" class="text-info" style="text-decoration: none;">create a guild</a> page and we will walk you through the process, step by step.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowThree" aria-expanded="true" aria-controls="collapseHowThree">
+                                How do I add Players to my Guild?
+                            </button>
+                        </h4>
+                        <div id="collapseHowThree" class="accordion-collapse collapse" aria-labelledby="howThree" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                If you are an Admin of your guild, go to the Admin tab and enter the person’s email address to send them an invite. When they create an account they’ll be automatically added to your guild.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowFour" aria-expanded="true" aria-controls="collapseHowFour">
+                                What is an Admin?
+                            </button>
+                        </h4>
+                        <div id="collapseHowFour" class="accordion-collapse collapse" aria-labelledby="howFour" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                AFoG will automatically set the 5 active players with the most all-time AP as Admins in their guild. Admins are responsible for recording session attendance and also have the ability to email guild invitations to new players.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowFive" aria-expanded="true" aria-controls="collapseHowFive">
+                                What is a Session?
+                            </button>
+                        </h4>
+                        <div id="collapseHowFive" class="accordion-collapse collapse" aria-labelledby="howFive" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                A Session represents a real-world instance of game night. AFoG will automatically send out email reminders and create a session record for you, but obviously it’s up to you and your guildmates to get together and actually play the game. Feel free to use the AFoG Discord server to connect!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowSix" aria-expanded="true" aria-controls="collapseHowSix">
+                                When are Sessions scheduled?
+                            </button>
+                        </h4>
+                        <div id="collapseHowSix" class="accordion-collapse collapse" aria-labelledby="howSix" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                AFoG will automatically schedule sessions once every five days at the time-of-day specified by the guild creator at creation. The goal of the pace is to be frequent enough to be a routine part of your schedule but rare enough to not infringe on other important parts of life. This pace also ensures that the day-of-the-week on which game night falls is constantly changing, so scheduling conflicts for a player with other obligations on certain days of the week will hopefully be minimized. The constant cadence of the pace allows people to know when the sessions will be as far in advance as they want.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowSeven" aria-expanded="true" aria-controls="collapseHowSeven">
+                                How is Session attendance recorded?
+                            </button>
+                        </h4>
+                        <div id="collapseHowSeven" class="accordion-collapse collapse" aria-labelledby="howSeven" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                Clicking on a session record will open the Details view, which shows all players who attended the session. An Admin looking at this view for the most recent session will also see the list of active players who were absent from the session. An Admin can move players back and forth between the “Present” and “Absent” lists by simply clicking on their names. All players present for a session earn 1 AP.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowEight" aria-expanded="true" aria-controls="collapseHowEight">
+                                What is AP?
+                            </button>
+                        </h4>
+                        <div id="collapseHowEight" class="accordion-collapse collapse" aria-labelledby="howEight" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                AP stands for “Attendance Point”. Players earn 1 AP whenever they attend a Session and use those points to exert their own influence on what games the group plays. A player’s vote during game selection is weighted by how much AP they currently have, and AP can also be used to increase or decrease the number of sessions remaining on the current Game. The purpose of AP is to ensure that the people who are the most active participants in game night are the people who have the most input about what games are played.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowNine" aria-expanded="true" aria-controls="collapseHowNine">
+                                What does it mean to add or remove sessions?
+                            </button>
+                        </h4>
+                        <div id="collapseHowNine" class="accordion-collapse collapse" aria-labelledby="howNine" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                Each game has a certain number of sessions allotted to it when it is selected. If any player wants the current game to end sooner (so the group moves onto the next game) or last longer (so the group keeps playing it), they can use their AP to increase or decrease the number of sessions remaining for the current game.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="howTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHowTen" aria-expanded="true" aria-controls="collapseHowTen">
+                                What is a Transaction?
+                            </button>
+                        </h4>
+                        <div id="collapseHowTen" class="accordion-collapse collapse" aria-labelledby="howTen" data-bs-parent="#howAccordion">
+                            <div class="accordion-body">
+                                A Transaction is a record of AP being spent. The Session history shows all AP that has been earned, and the Transaction history shows all AP that has been spent.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="gamesAccordion">
+                    <h3 class="pt-4">How does the game selection process work?</h3>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="gamesOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGamesOne" aria-expanded="true" aria-controls="collapseGamesOne">
+                                How are Games selected for my Guild?
+                            </button>
+                        </h4>
+                        <div id="collapseGamesOne" class="accordion-collapse collapse" aria-labelledby="gamesOne" data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body">
+                                The very first game is selected by the person who creates the guild at the time of creation. All future games are selected by the guild players. As soon as one game cycle starts, AFoG automatically takes the guild through a three-phase selection process that includes nomination, voting, and results. By the end of this process, the next game has been selected and added to the schedule.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="gamesTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGamesTwo" aria-expanded="true" aria-controls="collapseGamesTwo">
+                                What is the Nomination Phase?
+                            </button>
+                        </h4>
+                        <div id="collapseGamesTwo" class="accordion-collapse collapse" aria-labelledby="gamesTwo" data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body">
+                                During the Nomination Phase, all members of the guild can add 1 game to the list of games players can choose from during the Voting Phase. AFoG is integrated with the Internet Game Database (IGDB) API, so the nomination page allows a user to search for a game by typing in its name. The search tool automatically excludes unreleased games, single-player games, and non-PC games.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="gamesThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGamesThree" aria-expanded="true" aria-controls="collapseGamesThree">
+                                What is the Voting Phase?
+                            </button>
+                        </h4>
+                        <div id="collapseGamesThree" class="accordion-collapse collapse" aria-labelledby="gamesThree" data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body">
+                                During the Voting Phase, players are shown a list of all the games that have been nominated and can drag-and-drop to order them according to their preference. Once their ballot is submitted, AFoG records the order of their preference and uses that to calculate a winner in the Results Phase.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="gamesFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGamesFour" aria-expanded="true" aria-controls="collapseGamesFour">
+                                What is the Results Phase?
+                            </button>
+                        </h4>
+                        <div id="collapseGamesFour" class="accordion-collapse collapse" aria-labelledby="gamesFour" data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body">
+                                At the start of the Results Phase, AFoG will automatically process all the ballots that have been submitted to calculate the results and determine the winner. A detailed round-by-round results page can be viewed to see exactly who voted for what games in which rounds, when each game was eliminated, and how much AP each player spent.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h4 class="accordion-header" id="gamesFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGamesFive" aria-expanded="true" aria-controls="collapseGamesFive">
+                                How does AFoG calculate the winner of a game selection vote?
+                            </button>
+                        </h4>
+                        <div id="collapseGamesFive" class="accordion-collapse collapse" aria-labelledby="gamesFive" data-bs-parent="#gamesAccordion">
+                            <div class="accordion-body">
+                                <p>The logic behind compiling the results of the vote and determining the winner is surprisingly complicated. If there’s enough demand for it eventually we'll type out a detailed explanation, but the important points for the casual observer are these:</p>
+                                <ul>
+                                    <li>The system uses <a href="https://en.wikipedia.org/wiki/Instant-runoff_voting" class="text-info" style="text-decoration: none;">Instant Runoff Voting</a></li>
+                                    <li>The vote is weighted by each players current AP</li>
+                                    <li>Each round in the runoff is weighted twice as much as the one before it</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FAQ END -->
+
+        <!-- Script Start -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="./Scripts/index.js"></script>
+        <!-- Script End -->
+        
+    </body>
+    <footer>
+        <hr>
+        <div class="container py-3">
+            <p class="text-center">Copyright &copy; 2023 A Fifth of Gaming. All rights reserved.</p>
+        </div>
+    </footer>
+</html>

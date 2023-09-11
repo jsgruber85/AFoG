@@ -10,43 +10,42 @@
         <link rel="stylesheet" href="./Styles/style.css">
         <!-- CSS End -->
 
-    </head>
-    <body>
+        <body>
 
         <!-- Navbar Star -->
-        <section navbar>
+        <section navbar class="pb-5 mb-5">
             <nav class="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">AFoG</a>
+                <div class="container-fluid" style="padding-left: 0px;">
+                    <a href="./index.html"><img class="navbar-brand afog-navbar-image" src="./Assets/Images/AFoG Logos/AFoG Text - Red.png" alt="afog"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarColor01">
                         <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Guild<span class="visually-hidden">(current)</span></a>
+                            <a class="nav-link" href="#">My Guilds<span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Players</a>
+                            <a class="nav-link" href="#">My Sessions</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sessions</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Vault</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Fund</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Vault</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">My Vault</a>
+                                <a class="dropdown-item" href="#">Guild Vault</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Add Funds</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Admin</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" href="./faq.html">FAQ</a>
                         </li>
                         </ul>
                         <div style="padding-right: 20px;">
-                            <p style="margin: auto">Wallet Balance: 3,670,456 sats ($4.72)</p>
+                            <p style="margin: auto">My Vault Balance: 3,670,456 sats ($4.72)</p>
                         </div>
                         <a href="./login.html">
                             <button class="btn btn-info my-2 my-sm-0" type="submit">My Account</button>
@@ -59,14 +58,16 @@
 
         <!-- Hero Start -->
         <section hero>
-            <div class="text-center p-5">
+            <div class="text-center pb-5">
                 <!-- <img class="d-block mx-auto mb-4" src="./Assets/Images/pexels-nathan-b-caldeira-6125330.jpg" alt="temp" width="100%"> -->
-                <h1 class="display-5 fw-bold pt-5 grow-in" style="color: #ee5f5b;">A Fifth of Gaming</h1>
+                <h1 class="display-5 fw-bold grow-in" style="font-size: 4.5rem; color: #ee5f5b;">A Fifth of Gaming</h1>
                 <div class="col-lg-6 mx-auto">
-                    <p class="lead my-4 delay1 grow-in">Connecting gamers worldwide since 2020</p>
+                    <p class="lead mb-5 grow-in" style="animation-delay: 0.3s;">Connecting gamers worldwide since 2019</p>
                     <div class="d-grid gap-4 d-sm-flex justify-content-sm-center">
-                        <button type="button" class="btn btn-success slide-right"><a class="nav-link" href="#">Join a Guild</a></button>
-                        <button type="button" class="btn btn-success slide-left"><a class="nav-link" href="#">Create a Guild</a></button>                  
+                        <button type="button" class="btn btn-success slide-right"><a class="nav-link" href="./join-guild.html">Join a Guild</a></button>
+                        <div class="vertical-line fade-in" style="animation-delay: 0.8s;">
+                        </div>
+                        <button type="button" class="btn btn-success slide-left"><a class="nav-link" href="./create-guild.html">Create a Guild</a></button>                  
                     </div>
                 </div>
             </div>
@@ -137,11 +138,11 @@
                 <p class="text-center mb-3">We have a little fun</p>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">Deep Rock Galactic</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">Deep Rock Galactic</h2>
                             <div class="card-body">
                                 <a href="https://www.deeprockgalactic.com/">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/Deep Rock Galactic.jpg" alt="deep rock galactic">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/Deep Rock Galactic.jpg" alt="deep rock galactic">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 16</li>
@@ -151,11 +152,11 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">Overwatch 2</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">Overwatch 2</h2>
                             <div class="card-body">
                                 <a href="https://overwatch.blizzard.com/en-us/">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/Overwatch 2.jpg" alt="overwatch 2">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/Overwatch 2.jpg" alt="overwatch 2">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 14</li>
@@ -165,11 +166,11 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">Heroes of the Storm</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">Heroes of the Storm</h2>
                             <div class="card-body">
                                 <a href="https://heroesofthestorm.blizzard.com/en-us/">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/Heroes of the Storm.jpg" alt="heroes of the storm">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/Heroes of the Storm.jpg" alt="heroes of the storm">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 13</li>
@@ -187,14 +188,14 @@
         <section recent-top-games class="slide-up" style="animation-delay: 1.7s;">
             <div class="container">
                 <h2 class="text-center mt-5">Recent Top Games</h2>
-                <p class="text-center mb-3">Get in on the <strong><a class="nav-item" style="text-decoration: none; color: var(--bs-danger)" href="#">action</a></strong></p>
+                <p class="text-center mb-3">Get in on the <strong><a class="nav-item text-info" style="text-decoration: none;" href="./join-guild.html">action</a></strong></p>
                 <div class="row">
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">Stellaris</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">Stellaris</h2>
                             <div class="card-body">
                                 <a href="https://www.paradoxinteractive.com/games/stellaris/about">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/Stellaris.jpg" alt="stellaris">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/Stellaris.jpg" alt="stellaris">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 5</li>
@@ -204,11 +205,11 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">MTG: Arena</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">MTG: Arena</h2>
                             <div class="card-body">
                                 <a href="https://magic.wizards.com/en/mtgarena?utm_source=google&utm_medium=cpc&utm_content=opb-branded-search-exact-text-arn-t01-m99&gclid=CjwKCAjw6eWnBhAKEiwADpnw9jcKSsLSXnEOmKVe9ziUFS3d11t2txVGPgoZqpXIYY7C8jF9TjRGkhoCyHUQAvD_BwE">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/MTG Arena.jpg" alt="mtg: arena">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/MTG Arena.jpg" alt="mtg: arena">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 3</li>
@@ -218,11 +219,11 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12 py-2">
-                        <div class="card text-white bg-primary mx-auto text-center" style="width: 100%;">
-                            <div class="card-header">Apex Legends</div>
+                        <div class="card text-white bg-primary mx-auto text-center card-headings" style="width: 100%;">
+                            <h2 class="card-header">Apex Legends</h2>
                             <div class="card-body">
                                 <a href="https://www.ea.com/games/apex-legends">
-                                    <img class="card-preview-image" src="./Assets/Images/Games/Apex Legends.jpg" alt="apex legends">
+                                    <img class="img-rounded-corners" src="./Assets/Images/Games/Apex Legends.jpg" alt="apex legends">
                                 </a>
                                 <ul class="card-preview-list pt-3">
                                     <li>Sessions played: 5</li>
@@ -237,7 +238,7 @@
         <!-- Recent Top Games End -->
 
         <!-- Script Start -->
-        <script src="./Scripts/Bootstrap/bootstrap.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="./Scripts/index.js"></script>
         <!-- Script End -->
 
